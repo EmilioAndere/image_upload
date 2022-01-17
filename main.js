@@ -17,7 +17,7 @@ containerImage.addEventListener('drop', function(ev){
     reader.onload = (e) => {
         fd.append('image', e.target.result);
         fd.append('file', fileName);
-        fetch('http://localhost/image_upload/upload.php', {
+        fetch('https://competent-tereshkova-6ece80.netlify.app/upload.php', {
             method: 'POST',
             body: fd
         }).then(data => data.text())
