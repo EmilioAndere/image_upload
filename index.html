@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=devic-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Image Upload</title>
+</head>
+<body>
+    <div id="container">
+        <h1 class="title">Upload your image</h1>
+        <h2>File should be Jpeg, Png...</h2>
+        <div class="dragAndDrop" id="dropper">
+            <img src="./image.svg" alt="">
+            <p>Drag & Drop your image here</p>
+        </div>
+        <p>Or</p>
+        <button class="btnChoose">Choose File</button>
+    </div>
+    <div id="results">
+        <div id="headImg">
+            <span class="material-icons">check_circle</span>
+            <h1>Uploaded Successfully</h1>
+        </div>
+        <div class="imgUploaded">
+            <img id="uploaded">
+        </div>
+        <div id="clipBoard">
+            <p id="link">Hola</p>
+            <button id="copy">Copy link</button>
+        </div>
+    </div>
+    <div id="barloader">
+        <h1 class="title">Uploading...</h1>
+        <div id="loader">
+            <div id="bar"></div>
+        </div>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>
